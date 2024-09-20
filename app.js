@@ -1,7 +1,7 @@
 document.getElementById("userForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form from submitting the traditional way
+    event.preventDefault();
 
-    // Capture form data and create an object
+   
     const userData = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -10,8 +10,8 @@ document.getElementById("userForm").addEventListener("submit", function(event) {
     };
 
     // Convert the object to a JSON string
-    const jsonString = JSON.stringify(userData, null, 2); // Pretty print the JSON
+    const jsonString = JSON.stringify(userData, null, 2);
 
-    // Display the JSON in the HTML
+   
     document.getElementById("jsonOutput").textContent = jsonString;
 });
